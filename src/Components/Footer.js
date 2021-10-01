@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join our Lichal Community to receive our latest updates
+          Join Lichal Community to receive our latest updates
         </p>
         <div className='input-areas'>
           <form>
