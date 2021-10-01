@@ -1,0 +1,134 @@
+.logo_main{
+    display: inline-block;
+    margin: auto;
+    position:relative;
+    padding: 5px;
+    overflow: hidden;
+    width:auto;
+  }
+
+.logo_main .logo{
+    position: relative;
+
+    float: left;
+}
+
+.logo_main .title{
+    float: left;
+    text-align: left;
+    opacity: 1;
+    width: auto;
+    overflow: hidden;
+    /* width: 60%; */
+    /* transition: opacity 0.5s;
+    transition: transform 0.5s ease; */
+}
+
+.title .lichal{
+    position: relative;
+    width: auto;
+    font-size: 20px;
+    margin-left: 0.2rem;
+    text-align: left;
+
+    background-image: linear-gradient(to right,hsl(0,100%,75%),hsl(30,100%,75%),hsl(60,100%,75%),hsl(90,100%,75%),hsl(120,100%,75%),hsl(150,100%,75%),hsl(180,100%,75%));
+    /* background-size: 60%; */
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    z-index: 1;
+
+    transform:scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease-in;
+    transition-delay: 500ms;
+}
+
+/* .lichal::after{
+    content: "";
+    position: absolute;
+    left:-0.6rem;
+    top: 0rem;
+    bottom: -0.25rem;
+    width: 100%;
+    background:linear-gradient(to right,hsl(0,100%,75%),hsl(30,100%,75%),hsl(60,100%,75%),hsl(90,100%,75%),hsl(120,100%,75%),hsl(150,100%,75%),hsl(180,100%,75%));
+    z-index: -1;
+    
+    transform:scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease-in;
+    transition-delay: 500ms;
+} */
+
+/* .logo:hover + .title .lichal::after{
+    transform: scaleX(1);
+    transition: transform 750ms;
+
+} */
+
+.logo:hover + .title .lichal{
+    transform: scaleX(1);
+    transition: transform 750ms;
+
+}
+
+.corp{
+    position: relative;
+    width: auto;
+    margin-left:1rem;
+    z-index: 1;
+
+    text-align: left;
+
+    background-image: linear-gradient(to right,hsl(180,100%,75%),hsl(210,100%,75%),hsl(240,100%,75%),hsl(270,100%,75%),hsl(300,100%,75%),hsl(330,100%,75%),hsl(360,100%,75%));
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    transform:scaleY(0);
+    transition: transform 500ms ease-in;
+    transform-origin: top;
+
+}
+
+/* .corp::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -0.25rem;
+    right: 0;
+    background:linear-gradient(to right,hsl(180,100%,75%),hsl(210,100%,75%),hsl(240,100%,75%),hsl(270,100%,75%),hsl(300,100%,75%),hsl(330,100%,75%),hsl(360,100%,75%));
+    z-index: -1;
+
+    transform:scaleY(0);
+    transition: transform 500ms ease-in;
+    transform-origin: top;
+
+}
+
+.logo:hover + .title .corp::after{
+    transform: scaleY(1);
+    transition: transform 750ms;
+    transition-delay: 750ms;
+    
+} */
+
+.logo:hover + .title .corp{
+    transform: scaleY(1);
+    transition: transform 750ms;
+    transition-delay: 750ms;
+    
+}
+
+
+/* .logo:hover .title{
+    transform: translateX(20px);
+    transition: transform 0.5s;
+    opacity: 1;
+} */
+
+/* .logo .title .corp{
+    position: relative;
+} */

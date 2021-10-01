@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import MenuButton from './others/MenuButton';
+import LogoStructures from './LogoStructures';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -30,8 +30,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            Lichal Structures
-            <i class='fab fa-typo3' />
+            <LogoStructures size="50" id1="1h1" id2="1h2"/>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -61,27 +60,17 @@ function Navbar() {
               </Link>
             </li>
 
-            <li className='nav-item'>
-              <Link
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                CONTACT
-              </Link>
-            </li>
-
             <li>
               <Link
                 to='/sign-up'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                CONTACT US
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline'>CONTACT US</Button>}
         </div>
       </nav>
     </>

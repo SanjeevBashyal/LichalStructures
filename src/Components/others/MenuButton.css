@@ -9,7 +9,7 @@
 .bar {
     top: 3px;
     left: 0;
-    background-color: #fff;
+    background-color: #000;
     width: 100%;
     -webkit-transform-origin: center center;
     transform-origin: center center;
@@ -37,9 +37,9 @@
     -webkit-transition: opacity .2s linear .1s;
     transition: opacity .2s linear .1s;
 }
-/* #hamburger, .bar {
+#hamburger, .bar {
     position: absolute;
-} */
+}
 
 /* #hamburger:hover{
     transform:rotate(0);
