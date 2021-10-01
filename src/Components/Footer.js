@@ -8,10 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
-        </p>
-        <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
+          Join our Lichal Community to receive our latest updates
         </p>
         <div className='input-areas'>
           <form>
@@ -64,11 +61,11 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
+              LICHAL
               <i class='fab fa-typo3' />
             </Link>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
+          <small class='website-rights'>LICHAL © 2021</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'

@@ -29,7 +29,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            L-Structures
+            Lichal Structures
             <i class='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -59,9 +59,10 @@ function Navbar() {
                 SHOP
               </Link>
             </li>
+
             <li className='nav-item'>
               <Link
-                to='/services'
+                to='/products'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
