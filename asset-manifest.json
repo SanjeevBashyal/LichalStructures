@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d88e7913.chunk.css",
+    "main.js": "/static/js/main.f84b5b0b.chunk.js",
+    "main.js.map": "/static/js/main.f84b5b0b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.768ed57d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.768ed57d.js.map",
+    "static/js/2.6af8fcad.chunk.js": "/static/js/2.6af8fcad.chunk.js",
+    "static/js/2.6af8fcad.chunk.js.map": "/static/js/2.6af8fcad.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.d88e7913.chunk.css.map": "/static/css/main.d88e7913.chunk.css.map",
+    "static/js/2.6af8fcad.chunk.js.LICENSE.txt": "/static/js/2.6af8fcad.chunk.js.LICENSE.txt",
+    "static/media/Autocad.png": "/static/media/Autocad.84237286.png",
+    "static/media/Revit.jpg": "/static/media/Revit.dc91657e.jpg",
+    "static/media/WavingFlag.34d6857a.gif": "/static/media/WavingFlag.34d6857a.gif",
+    "static/media/design.814a4d9b.svg": "/static/media/design.814a4d9b.svg",
+    "static/media/etabs.png": "/static/media/etabs.0cdd1f35.png",
+    "static/media/App.css": "/static/media/img-8.fabdf94d.jpg",
+    "static/media/left-arrow.53878c51.svg": "/static/media/left-arrow.53878c51.svg",
+    "static/media/right-arrow.8b8fb639.svg": "/static/media/right-arrow.8b8fb639.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.768ed57d.js",
+    "static/js/2.6af8fcad.chunk.js",
+    "static/css/main.d88e7913.chunk.css",
+    "static/js/main.f84b5b0b.chunk.js"
+  ]
+}
