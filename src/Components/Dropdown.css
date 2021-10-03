@@ -1,6 +1,10 @@
+/* .search-bar-dropdown{
+    border: 1px solid yellow;
+} */
 .form-control {
     display: block;
     width: 100%;
+    height: 100%;
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -14,6 +18,10 @@
     appearance: none;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+.list-container{
+    position: absolute;
 }
 
 .list-group {

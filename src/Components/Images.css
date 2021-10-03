@@ -1,0 +1,38 @@
+.specialization{
+    padding: 20px;
+    background: #fff;
+}
+
+.specialization > h1{
+    color: #000;
+    font-size: 35px;
+    text-align: center;
+}
+
+.specialization-row{
+    padding: 30px;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.specialization-item{
+    text-align: center;
+}
+
+.specialization-item > img{
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.rounded-circle{
+    border-radius:50%!important
+}
+
+.img-raised {
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.5); 
+}
+

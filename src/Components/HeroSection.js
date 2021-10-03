@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
@@ -8,18 +8,35 @@ import Flag from '../images/WavingFlag.gif';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 function HeroSection() {
+  const [options2, setOptions2] = useState([]);
+
+  const optionsGiver=()=>{
+    // document.getElementById("Structure").value="";
+    const val=document.getElementById("Sector").value;
+    if(val==="Building"){
+      setOptions2(["Residential","Commercial"]);
+    }
+    else if(val==="Bridge"){
+      setOptions2(["Trail Bridge","RCC Bridge"]);
+    }
+  }
+
+  const nothing=()=>{
+  }
 
   return (
     <div className='hero-container'>
       <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <div className="tagTitle">
-          <h1>DEVELOPMENT UNFOLDS</h1>
-        <div className="tagTitleH3">
-          <img src={Flag} height="35px" width="35px"/>
-          <h3>LS<i className="fas fa-cube"></i></h3>
+      <div className="heroText">
+        <div className="tagTitle">
+            <h1>DEVELOPMENT UNFOLDS @</h1>
+          <div className="tagTitleH3">
+            <img src={Flag} height="35px" width="35px"/>
+            <h3>LS<i className="fas fa-cube"></i></h3>
+          </div>
         </div>
+        <p>We are Ready, Are You?</p>
       </div>
-      <p>We are Ready, Are You?</p>
       {/* <div className='hero-btns'>
         <Button
           className='btns'
@@ -38,22 +55,26 @@ function HeroSection() {
         </Button>
       </div> */}
       <div className="dropOrders">
-        <SearchDropdown placeHolder="Sector" opts={["Building","Bridge"]}/>
-        <SearchDropdown placeHolder="Structure" opts={["Residential","Commercial"]}/>
-        <SearchDropdown placeHolder="Location" opts={["Kathmandu","Butwal"]}/>
-        <input
-          className="phone-input"
-          type="text"
-          placeholder="Mobile No."
-        />
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--medium'
-          onClick={console.log('hey')}
-        >
-          ORDER <i className='far fa-edit' />
-        </Button>
+        <SearchDropdown onSelected={optionsGiver} id="Sector" placeHolder="Sector" opts={["Building","Bridge"]}/>
+        <SearchDropdown onSelected={nothing} id="Structure" placeHolder="Structure" opts={options2}/>
+        <SearchDropdown onSelected={nothing} id="Location" placeHolder="Location" opts={["Kathmandu","Butwal"]}/>
+        <div className="input-mobile">
+          <input
+            className="form-control"
+            type="text"
+            placeholder="Mobile No."
+          />
+        </div>
+        <div className="order-now">
+          <Button
+            className='btns'
+            buttonStyle='btn--primary'
+            buttonSize='btn--no-font-size'
+            onClick={console.log('hey')}
+          >
+            ORDER <i className='far fa-edit' />
+          </Button>
+        </div>
       </div>
       {/* <Dropdown>
         <Dropdown.Toggle variant="success" id="dropdown-basic">
